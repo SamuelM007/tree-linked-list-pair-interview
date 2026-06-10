@@ -13,6 +13,11 @@ public class RedQ1 {
      * @return the sum of the elements at odd indexes
      */
     public static int oddIndexSum(ListNode head) {
-        return -1;
+        int sum = 0;
+        while(head != null){
+            sum+= head.data;
+            head = head.next;
+        }
+        return sum;
     }
 }
